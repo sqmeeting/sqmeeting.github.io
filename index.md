@@ -99,7 +99,7 @@ Configuration ref:
 
 | Client System | Download | SHA1 |
 |---------|---------|---------|
-| Windows|[Download](https://shenqi-dl.internetware.cn/client/SQMeeting-win-release-3.4.2-610.msi) | e7ab76e9bad170d44c8e7fcc5b84133cf3fae26d |
+| Windows|[Download](https://shenqi-dl.internetware.cn/client/SQMeeting-win-en-release-3.4.2-619.msi) | e7ab76e9bad170d44c8e7fcc5b84133cf3fae26d |
 | MacOS|[Download](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-3.4.2.403.dmg)| f6cbbafdd0d0030fc976c22873081716b1c3e5d2 |
 | MacOS arm64|[Download](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-arm64-3.4.2.403.dmg)| c025e560fd4bc7042ea7c8f69473f90e1e329819 |
 | Linux x86| [Download](https://shenqi-dl.internetware.cn/client/SQMeeting-linux-x86_64-3.4.1.20250307.tar.gz) | 1867c6c1435b199cd6694e0596e1e41cdd6899b6 |
@@ -115,7 +115,7 @@ Designed for meeting room devices such as MAXHUB, Newline, etc.
 | Room System | Download | SHA1 |
 |---------|---------|---------|
 | Android Room |[Download](https://shenqi-dl.internetware.cn/client/SQMeetingRooms-android-1.2.0.517.apk) | 131f4f2c911c5e90f6422bebfc83fde48b1d5e5b |
-| Windows Room |[Download](https://shenqi-dl.internetware.cn/client/SQMeeting-win-release-3.4.2-610.msi) | e7ab76e9bad170d44c8e7fcc5b84133cf3fae26d |
+| Windows Room |[Download](https://shenqi-dl.internetware.cn/client/SQMeeting-win-en-release-3.4.2-619.msi) | e7ab76e9bad170d44c8e7fcc5b84133cf3fae26d |
 
 
 ## Contact Us for Commercial Support
