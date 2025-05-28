@@ -98,7 +98,7 @@ config 说明:
 
 | 客户端系统 | 下载 | SHA1 |
 |---------|---------|---------|
-| Windows|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-win-en-release-3.4.2-619.msi) | e7ab76e9bad170d44c8e7fcc5b84133cf3fae26d |
+| Windows|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-win-en-release-3.4.2-619.msi) | 873c5171cb069fe41a280ee778d89d1eb7a45f41 |
 | MacOS|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-3.4.2.403.dmg)| f6cbbafdd0d0030fc976c22873081716b1c3e5d2 |
 | MacOS arm64|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-arm64-3.4.2.403.dmg)| c025e560fd4bc7042ea7c8f69473f90e1e329819 |
 | Linux x86| [下载](https://shenqi-dl.internetware.cn/client/SQMeeting-linux-x86_64-3.4.1.20250307.tar.gz) | 1867c6c1435b199cd6694e0596e1e41cdd6899b6 |
@@ -114,7 +114,7 @@ config 说明:
 | 会议室系统 | 下载 | SHA1 |
 |---------|---------|---------|
 | Android Room |[下载](https://shenqi-dl.internetware.cn/client/SQMeetingRooms-android-1.2.0.517.apk) | 131f4f2c911c5e90f6422bebfc83fde48b1d5e5b |
-| Windows Room |[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-win-en-release-3.4.2-619.msi) | e7ab76e9bad170d44c8e7fcc5b84133cf3fae26d |
+| Windows Room |[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-win-en-release-3.4.2-619.msi) | 873c5171cb069fe41a280ee778d89d1eb7a45f41 |
 
 
 
