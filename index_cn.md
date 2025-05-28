@@ -120,6 +120,8 @@ config 说明:
 
 ## 联系我们获取商业支持
 
-📝 [yunling@dcholdings.com](mailto:yunling@dcholdings.com)
+📝[yunling@dcholdings.com](mailto:yunling@dcholdings.com)
 
-💡 [discussions](https://github.com/thomasyaung/web/discussions)
+💡 [讨论](https://github.com/orgs/sqmeeting/discussions)
+
+🌐 [开源地址: https://github.com/sqmeeting](https://github.com/sqmeeting)

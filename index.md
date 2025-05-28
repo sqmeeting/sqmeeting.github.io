@@ -122,4 +122,6 @@ Designed for meeting room devices such as MAXHUB, Newline, etc.
 
 📝 [yunling@dcholdings.com](mailto:yunling@dcholdings.com)
 
-💡 [discussions](https://github.com/thomasyaung/web/discussions)
+💡 [discussions](https://github.com/orgs/sqmeeting/discussions)
+
+🌐 [https://github.com/sqmeeting](https://github.com/sqmeeting)
