@@ -139,7 +139,116 @@ You can enhance system security through the following methods:
    Access SQMeeting Server web page → System Management → Security Settings, set "Password Security Level" and "Password Validity Period", enable "Prohibit External Network Access to Management Page" to enhance system security.
 
 
-### 12. Test Basic Functions
+### 12. Recording and Streaming Service Configuration
+
+This page explains how to configure recording and streaming services on the SQMeeting service platform.
+
+To get recording and streaming services, you need to:
+
+1. Install the gateway node according to steps one to four of the meeting gateway guide
+2. Install and configure the recording node according to the instructions on this page
+
+#### 12.1 Installation Preparation
+Resources needed for installation:
+
+Please prepare a dedicated VM to install the SQMeeting recording and streaming node, do not share the VM with other services!
+
+- Minimum configuration: 4 logical CPU cores, 8GB Memory, 100GB or more system disk (Note: Minimum configuration is for testing only)
+- Recommended configuration: 8 logical CPU cores, 16GB Memory, 120GB or more system disk, 500GB or more data disk
+- CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
+
+#### 12.2 Installation Steps
+Based on different CPU architectures and operating system versions, refer to step two of the service platform download and installation guide to install the recording node
+
+Important!!!
+When running the installation command, choose "no" for free license
+After the node installation is complete, there is no need to perform web configuration, return to this page for adding the recording node and configuring the service
+
+#### 12.3 Adding the Recording Node
+After the recording node is successfully installed, SSH login to the VM where the gateway node is located.
+Run the command `su - frtc_console` to enter the console.
+Navigate to Cluster, add the recording node to the SQMeeting service platform
+![Streaming Join](./images/streamingjoin.jpg)
+
+Specific operation: Select "StreamingServer" for Node Type, fill in the service platform's intranet address for Manager IP, click Apply to join the cluster, wait for the system to restart.
+
+#### 12.4 Recording License
+Log in to the service platform web management page (e.g., https://10.150.1.202:7443).
+Navigate to System Management -> Software License -> Recording License, confirm that the status and validity period of the recording license meets requirements.
+![Recording License](./images/recording_license.jpg)
+
+#### 12.5 Configuring Recording Service
+After the recording node joins the cluster, log in to the service platform web management page (e.g., https://10.150.1.202:7443).
+Navigate to System Management -> System Settings, confirm that the recording node has successfully joined the service platform, and that the node status is normal.
+
+![Recording Node](./images/recording_node.jpg)
+
+Navigate to System Management -> Recording Settings.
+
+If the number of concurrent streaming viewers is small, you can select "Use the public network address set by the system".
+![Recording Settings_System Public Network](./images/recording_settings_system.jpg)
+
+If you are providing official recording services, you need to configure dedicated public network address, domain name, bandwidth for streaming, and install certificates.
+
+#### 12.6 Recording and Streaming Test
+Users with meeting administrator or system administrator privileges log in to the SQMeeting client, start an instant meeting, and click "Start Recording" and "Start Streaming" on the toolbar at the bottom of the meeting interface.
+
+
+### 13. Gateway
+
+This section explains how to configure gateway services on the SQMeeting server. The gateway service is mainly used for interconnection between the SQMeeting system and H.323 conference room equipment.
+
+To obtain gateway services, you need to:
+
+1. Install and configure the gateway node
+2. Configure the H.323 service
+
+#### 13.1 Installation Preparation
+Resources needed for installation:
+
+Please prepare a dedicated VM to install the SQMeeting gateway node, do not share the VM with other services!
+
+- Minimum configuration: 4 logical CPU cores, 4GB Memory, 100GB or more system disk (Note: Supports 1 interconnection)
+- Recommended configuration: 16 logical CPU cores, 16GB Memory, 120GB or more system disk (Note: Supports 4 interconnections)
+- CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
+
+#### 13.2 Installing the Gateway Node
+The installation package used for the gateway node is the same as the main service platform, but with different configuration. Based on different CPU architectures and operating system versions, refer to the service platform download and installation guide. For example, on Ubuntu systems, find the corresponding "SQMeeting Service Platform Installation Package Download" for Ubuntu, download the installation package, and then follow "II. Installation" in the "SQMeeting Service Platform Ubuntu Installation Guide" to install the gateway node.
+
+Important!!!
+When running the installation command, choose "no" for free license
+After the node installation is complete, there is no need to perform web configuration, return to this page for adding the gateway node and configuring the service
+
+#### 13.3 Adding the Gateway Node
+After the gateway node is successfully installed, SSH login to the VM where the gateway node is located.
+Run the command `su - frtc_console` to enter the console.
+Navigate to Cluster, add the gateway node to the SQMeeting service platform
+![Gateway Join](./images/gatewayjoin.jpg)
+
+Specific operation: Select "Gateway" for Node Type, fill in the service platform's intranet address for Manager IP, click Apply to join the cluster, wait for the system to restart.
+
+Confirm that the gateway node has successfully joined the service platform
+Log in to the service platform web management page (e.g., https://10.150.1.202:7443).
+Navigate to System Management -> System Settings, confirm that the gateway node has successfully joined the service platform, and that the node status is normal.
+![Gateway Node](./images/gatewaynode.jpg)
+
+#### 13.4 Gateway License
+Log in to the service platform web management page (e.g., https://10.150.1.202:7443).
+Navigate to System Management -> Software License -> Gateway License, confirm that the status and validity period of the gateway license meets requirements.
+
+![Gateway License](./images/gatewaylicense.jpg)
+
+#### 13.5 Interconnection with H.323 Equipment
+If H.323 equipment is on the intranet where the service platform is located, you need to first add the intranet device IP range to the service platform.
+Log in to the service platform web management page (e.g., https://10.150.1.202:7443), navigate to System Management -> Gateway Settings, add the intranet device address range, as shown in the format below:
+![Gateway Internal](./images/gatewayinternal.jpg)
+
+Methods for interconnecting with H.323 equipment:
+- If the H.323 device is on the service platform's intranet, call: Service platform intranet address##SQMeeting meeting number (e.g., 10.150.1.202##666888), check if audio, video, and dual stream can be interconnected
+- If the H.323 device is on the service platform's external network, call: Service platform external network address##SQMeeting meeting number (e.g., 36.105.101.82##666888), check if audio, video, and dual stream can be interconnected
+
+
+###  Test Basic Functions
 
 Check the software license to ensure it is still valid.
 
