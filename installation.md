@@ -141,7 +141,7 @@ You can enhance system security through the following methods:
 
 ### 12. Recording and Streaming Service Configuration
 
-This page explains how to configure recording and streaming services on the SQMeeting service platform.
+This page explains how to configure recording and streaming services on the SQMeeting server.
 
 To get recording and streaming services, you need to:
 
@@ -167,7 +167,7 @@ After the node installation is complete, there is no need to perform web configu
 #### 12.3 Adding the Recording Node
 After the recording node is successfully installed, SSH login to the VM where the gateway node is located.
 Run the command `su - frtc_console` to enter the console.
-Navigate to Cluster, add the recording node to the SQMeeting service platform
+Navigate to Cluster, add the recording node to the SQMeeting server
 ![Streaming Join](./images/streamingjoin.jpg)
 
 Specific operation: Select "StreamingServer" for Node Type, fill in the service platform's intranet address for Manager IP, click Apply to join the cluster, wait for the system to restart.
@@ -179,7 +179,7 @@ Navigate to System Management -> Software License -> Recording License, confirm 
 
 #### 12.5 Configuring Recording Service
 After the recording node joins the cluster, log in to the service platform web management page (e.g., https://10.150.1.202:7443).
-Navigate to System Management -> System Settings, confirm that the recording node has successfully joined the service platform, and that the node status is normal.
+Navigate to System Management -> System Settings, confirm that the recording node has successfully joined the SQMeeting server, and that the node status is normal.
 
 ![Recording Node](./images/recording_node.jpg)
 
@@ -222,14 +222,14 @@ After the node installation is complete, there is no need to perform web configu
 #### 13.3 Adding the Gateway Node
 After the gateway node is successfully installed, SSH login to the VM where the gateway node is located.
 Run the command `su - frtc_console` to enter the console.
-Navigate to Cluster, add the gateway node to the SQMeeting service platform
+Navigate to Cluster, add the gateway node to the SQMeeting server
 ![Gateway Join](./images/gatewayjoin.jpg)
 
 Specific operation: Select "Gateway" for Node Type, fill in the service platform's intranet address for Manager IP, click Apply to join the cluster, wait for the system to restart.
 
 Confirm that the gateway node has successfully joined the service platform
 Log in to the service platform web management page (e.g., https://10.150.1.202:7443).
-Navigate to System Management -> System Settings, confirm that the gateway node has successfully joined the service platform, and that the node status is normal.
+Navigate to System Management -> System Settings, confirm that the gateway node has successfully joined the SQMeeting server, and that the node status is normal.
 ![Gateway Node](./images/gatewaynode.jpg)
 
 #### 13.4 Gateway License
@@ -250,7 +250,7 @@ Methods for interconnecting with H.323 equipment:
 
 ### 14. HA deployment
 
-This page explains how to configure HA (High Availability) services on the SQMeeting service platform.
+This page explains how to configure HA (High Availability) services on the SQMeeting server.
 The HA service is mainly used to ensure business continuity of the service platform, automatically switching to the backup server when the primary server fails.
 To obtain HA services, you need to:
 
@@ -282,13 +282,13 @@ Click Enable HA, wait for data synchronization to complete.
 
 Confirm that the HA secondary server has successfully joined the service platform
 Using the HA virtual IP, log in to the HA service platform web management page (e.g., https://10.150.1.236:7443).
-Navigate to System Management -> System Settings, confirm that the HA secondary server has successfully joined the service platform, and that the node status is normal.
+Navigate to System Management -> System Settings, confirm that the HA secondary server has successfully joined the SQMeeting server, and that the node status is normal.
 ![HA System Settings](./images/ha_system_settings.jpg)
 
 **Configure HA Domain Name, IP, and Media IP**
 
-If the SQMeeting service platform only needs to be accessed from the intranet, configure the public management IP (as shown in box 1 above) as the HA intranet virtual IP (e.g., 10.150.1.236), domain name is optional.
-If the SQMeeting service platform is deployed in an enterprise DMZ or public cloud and needs to be accessed from the external network, the following configuration is required:
+If the SQMeeting server only needs to be accessed from the intranet, configure the public management IP (as shown in box 1 above) as the HA intranet virtual IP (e.g., 10.150.1.236), domain name is optional.
+If the SQMeeting server is deployed in an enterprise DMZ or public cloud and needs to be accessed from the external network, the following configuration is required:
 1). Configure the HA public management IP (as shown in box 1 above) as the HA external network virtual IP, domain name is optional.
 2). Configure the media address of the HA secondary server (as shown in box 2 above) as the corresponding external network address and port of the HA secondary server (default is UDP: 32500-32507)
 3). You need to map the external network address of the HA secondary server to the intranet address on the firewall, and open the management port (default: TCP: 7443) and media ports (default: UDP: 32500-32507)
