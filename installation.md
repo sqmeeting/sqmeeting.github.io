@@ -1,4 +1,4 @@
-# SQMeeting Server Basic Configuration
+# Configuration
 
 This page explains how to configure SQMeeting Server after installation to provide basic meeting services.
 

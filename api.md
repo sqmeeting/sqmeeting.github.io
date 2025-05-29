@@ -1,7 +1,7 @@
-# SQMeeting Public API
+# API
 
 ## Table of Contents
-- [SQMeeting Public API](#sqmeeting-public-api)
+- [API](#api)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Release Notes](#release-notes)
