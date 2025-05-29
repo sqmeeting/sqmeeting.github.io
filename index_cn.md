@@ -69,7 +69,7 @@ tar -zxvf FrtcServer-x86_64-x.x.x-*****.tgz
 
 5. ***使用浏览器访问 https://your-linux-server-IP:7443 进行配置.***
 
-[神旗服务平台基础配置:](./configuration/config_baisc_cn)
+参考：[神旗服务平台基础配置](./configuration/config_baisc_cn)
 
 
 ## x86 Server (Ubuntu| CentOS | Rocky Linux| AlmaLinux|RHEL)
