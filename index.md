@@ -71,7 +71,7 @@ tar -zxvf FrtcServer-x86_64-x.x.x-*****.tgz
 
 5. ***Access https://your-linux-server-IP:7443 via browser to configure.***
 
-Reference: [Basic Configuration](./configuration/config_baisc)
+Reference: [Configuration](./installation)
 
 ## x86 Server (Ubuntu| CentOS | Rocky Linux| AlmaLinux|RHEL)
 
