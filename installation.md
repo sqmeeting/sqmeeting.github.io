@@ -248,6 +248,58 @@ Methods for interconnecting with H.323 equipment:
 - If the H.323 device is on the service platform's external network, call: Service platform external network address##SQMeeting meeting number (e.g., 36.105.101.82##666888), check if audio, video, and dual stream can be interconnected
 
 
+### 14. HA deployment
+
+This page explains how to configure HA (High Availability) services on the SQMeeting service platform.
+The HA service is mainly used to ensure business continuity of the service platform, automatically switching to the backup server when the primary server fails.
+To obtain HA services, you need to:
+
+1. Install and configure the HA primary server, refer to the download and installation guide
+2. Install and configure the HA backup server
+3. Enable the HA service
+
+#### 14.1 Installing the HA Backup Server
+The VM resources required and installation steps for the HA backup server are the same as the primary server
+
+Based on different CPU architectures and operating system versions, refer to the service platform download and installation guide to install the backup server
+
+Important!!!
+When running the installation command, choose "no" for free license
+After the node installation is complete, there is no need to perform web configuration, return to this page for HA license activation and enabling the HA service
+
+#### 14.2 Activating the HA License
+Follow the steps shown in Advanced Configuration -> License Activation -> HA License Activation to submit the HA license application and activate the HA license on the HA primary server.
+Log in to the service platform HA primary server web management page (e.g., https://10.150.1.202:7443).
+Navigate to System Management -> Software License -> HA License, confirm that the status and validity period of the HA license meets requirements.
+
+#### 14.3 Enabling the HA Service
+Log in to the service platform HA primary server web management page (e.g., https://10.150.1.202:7443).
+Navigate to System Management -> HA Settings, enable HA, fill in the HA backup server intranet address and HA virtual intranet IP.
+Click Enable HA, wait for data synchronization to complete.
+![HA License](./images/halicense.jpg)
+
+#### 14.4 HA System Settings
+
+Confirm that the HA secondary server has successfully joined the service platform
+Using the HA virtual IP, log in to the HA service platform web management page (e.g., https://10.150.1.236:7443).
+Navigate to System Management -> System Settings, confirm that the HA secondary server has successfully joined the service platform, and that the node status is normal.
+![HA System Settings](./images/ha_system_settings.jpg)
+
+**Configure HA Domain Name, IP, and Media IP**
+
+If the SQMeeting service platform only needs to be accessed from the intranet, configure the public management IP (as shown in box 1 above) as the HA intranet virtual IP (e.g., 10.150.1.236), domain name is optional.
+If the SQMeeting service platform is deployed in an enterprise DMZ or public cloud and needs to be accessed from the external network, the following configuration is required:
+1). Configure the HA public management IP (as shown in box 1 above) as the HA external network virtual IP, domain name is optional.
+2). Configure the media address of the HA secondary server (as shown in box 2 above) as the corresponding external network address and port of the HA secondary server (default is UDP: 32500-32507)
+3). You need to map the external network address of the HA secondary server to the intranet address on the firewall, and open the management port (default: TCP: 7443) and media ports (default: UDP: 32500-32507)
+
+#### 14.5 HA Access
+Intranet access:
+Access the system through the HA domain name (e.g., https://sq-ha.demo.com:7443) or HA intranet virtual IP (e.g., https://10.150.1.236:7443), including login and calls.
+External network access:
+Access the system through the HA domain name (e.g., https://sq-ha.demo.com:7443) or HA external network virtual IP (e.g., https://36.105.101.81:7443), including login and calls.
+
+
 ###  Test Basic Functions
 
 Check the software license to ensure it is still valid.
