@@ -2,7 +2,7 @@
 layout: default
 title: 神旗视讯
 ---
-# 神旗视讯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高性能，私有化的音视频解决方案!
+# 神旗视讯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高性能、私有化的音视频解决方案!
 
 [English](./index) | [简体中文](./index_cn)
 
@@ -69,7 +69,7 @@ tar -zxvf FrtcServer-x86_64-x.x.x-*****.tgz
 
 5. ***使用浏览器访问 https://your-linux-server-IP:7443 进行配置.***
 
-[神旗服务平台基础配置:](./config_baisc_cn)
+[神旗服务平台基础配置:](./configuration/config_baisc_cn)
 
 
 ## x86 Server (Ubuntu| CentOS | Rocky Linux| AlmaLinux|RHEL)
