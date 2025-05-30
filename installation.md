@@ -2,7 +2,24 @@
 
 ## Basic install (single node)
 
-quick install steps
+1. ***Prepare a Linux server VM according to supported Linux systems. (Minimum: 4 CPUs, 8GB memory, 40GB disk)***
+2. ***Download the SQMeeting server installation package, upload it to the Linux server VM, and extract it***
+```bash
+tar -zxvf FrtcServer-x86_64-x.x.x-*****.tgz
+```
+
+3. ***Verify if the system meets the installation requirements***
+```bash
+./frtc-setup check
+```
+
+4. ***Run the installation command***
+```bash
+./frtc-setup install
+```
+
+5. ***Access https://your-linux-server-IP:7443 via browser to configure.***
+
 
 ## System Settings
 
@@ -48,7 +65,7 @@ To obtain gateway services, you need to:
 1. Install and configure the gateway node
 2. Configure the H.323 service
 
-#### 13.1 Installation Preparation
+#### 1 Installation Preparation
 Resources needed for installation:
 
 Please prepare a dedicated VM to install the SQMeeting gateway node, do not share the VM with other services!
@@ -57,14 +74,14 @@ Please prepare a dedicated VM to install the SQMeeting gateway node, do not shar
 - Recommended configuration: 16 logical CPU cores, 16GB Memory, 120GB or more system disk (Note: Supports 4 interconnections)
 - CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
 
-#### 13.2 Installing the Gateway Node
+#### 2 Installing the Gateway Node
 The installation package used for the gateway node is the same as the main service platform, but with different configuration. Based on different CPU architectures and operating system versions, refer to the service platform download and installation guide. For example, on Ubuntu systems, find the corresponding "SQMeeting Service Platform Installation Package Download" for Ubuntu, download the installation package, and then follow "II. Installation" in the "SQMeeting Service Platform Ubuntu Installation Guide" to install the gateway node.
 
 Important!!!
 When running the installation command, choose "no" for free license
 After the node installation is complete, there is no need to perform web configuration, return to this page for adding the gateway node and configuring the service
 
-#### 13.3 Adding the Gateway Node
+#### 3 Adding the Gateway Node
 After the gateway node is successfully installed, SSH login to the VM where the gateway node is located.
 Run the command `su - frtc_console` to enter the console.
 Navigate to Cluster, add the gateway node to the SQMeeting server
@@ -77,13 +94,7 @@ Log in to the service platform web management page (e.g., https://10.150.1.202:7
 Navigate to System Management -> System Settings, confirm that the gateway node has successfully joined the SQMeeting server, and that the node status is normal.
 ![Gateway Node](./images/gatewaynode.jpg)
 
-#### 13.4 Gateway License
-Log in to the service platform web management page (e.g., https://10.150.1.202:7443).
-Navigate to System Management -> Software License -> Gateway License, confirm that the status and validity period of the gateway license meets requirements.
-
-![Gateway License](./images/gatewaylicense.jpg)
-
-#### 13.5 Interconnection with H.323 Equipment
+#### 4 Interconnection with H.323 Equipment
 If H.323 equipment is on the intranet where the service platform is located, you need to first add the intranet device IP range to the service platform.
 Log in to the service platform web management page (e.g., https://10.150.1.202:7443), navigate to System Management -> Gateway Settings, add the intranet device address range, as shown in the format below:
 ![Gateway Internal](./images/gatewayinternal.jpg)
@@ -92,24 +103,11 @@ Methods for interconnecting with H.323 equipment:
 - If the H.323 device is on the service platform's intranet, call: Service platform intranet address##SQMeeting meeting number (e.g., 10.150.1.202##666888), check if audio, video, and dual stream can be interconnected
 - If the H.323 device is on the service platform's external network, call: Service platform external network address##SQMeeting meeting number (e.g., 36.105.101.82##666888), check if audio, video, and dual stream can be interconnected
 
-
-### 8. How to Remove the Existing System
-
-Use the frtc-setup remove tool in the installation directory to uninstall the server platform software system, and restart the server after completion.
-
-```bash
-./frtc-setup remove
-```
-
-In the interactive environment, enter "yes" to keep backup data; enter "no" to not keep backup data.
-
-After execution is complete, the system will automatically restart.
-
 ## Add Streaming node for recording and live streaming
    
-   please install gatew node first. 
+   please install gateway node first. 
 
-### 12. Recording and Streaming Service Configuration
+### 1. Recording and Streaming Service Configuration
 
 This page explains how to configure recording and streaming services on the SQMeeting server.
 
@@ -118,7 +116,7 @@ To get recording and streaming services, you need to:
 1. Install the gateway node
 2. Install and configure the recording node
 
-#### 12.1 Installation Preparation
+#### 2. Installation Preparation
 Resources needed for installation:
 
 Please prepare a dedicated VM to install the SQMeeting recording and streaming node, do not share the VM with other services!
@@ -127,14 +125,14 @@ Please prepare a dedicated VM to install the SQMeeting recording and streaming n
 - Recommended configuration: 8 logical CPU cores, 16GB Memory, 120GB or more system disk, 500GB or more data disk
 - CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
 
-#### 12.2 Installation Steps
+#### 3. Installation Steps
 Based on different CPU architectures and operating system versions, refer to step two of the service platform download and installation guide to install the recording node
 
 Important!!!
 When running the installation command, choose "no" for free license
 After the node installation is complete, there is no need to perform web configuration, return to this page for adding the recording node and configuring the service
 
-#### 12.3 Adding the Recording Node
+#### 4. Adding the Recording Node
 After the recording node is successfully installed, SSH login to the VM where the gateway node is located.
 Run the command `su - frtc_console` to enter the console.
 Navigate to Cluster, add the recording node to the SQMeeting server
@@ -142,12 +140,7 @@ Navigate to Cluster, add the recording node to the SQMeeting server
 
 Specific operation: Select "StreamingServer" for Node Type, fill in the service platform's intranet address for Manager IP, click Apply to join the cluster, wait for the system to restart.
 
-#### 12.4 Recording License
-Log in to the service platform web management page (e.g., https://10.150.1.202:7443).
-Navigate to System Management -> Software License -> Recording License, confirm that the status and validity period of the recording license meets requirements.
-![Recording License](./images/recording_license.jpg)
-
-#### 12.5 Configuring Recording Service
+#### 5. Configuring Recording Service
 After the recording node joins the cluster, log in to the service platform web management page (e.g., https://10.150.1.202:7443).
 Navigate to System Management -> System Settings, confirm that the recording node has successfully joined the SQMeeting server, and that the node status is normal.
 
@@ -160,8 +153,21 @@ If the number of concurrent streaming viewers is small, you can select "Use the 
 
 If you are providing official recording services, you need to configure dedicated public network address, domain name, bandwidth for streaming, and install certificates.
 
-#### 12.6 Recording and Streaming Test
+#### 6. Recording and Streaming Test
 Users with meeting administrator or system administrator privileges log in to the SQMeeting client, start an instant meeting, and click "Start Recording" and "Start Streaming" on the toolbar at the bottom of the meeting interface.
+
+
+## How to Remove the Existing System
+
+Use the frtc-setup remove tool in the installation directory to uninstall the server platform software system, and restart the server after completion.
+
+```bash
+./frtc-setup remove
+```
+
+In the interactive environment, enter "yes" to keep backup data; enter "no" to not keep backup data.
+
+After execution is complete, the system will automatically restart.
 
 
 ## HA deployment
