@@ -1,4 +1,5 @@
 # API
+SQMeeting Server provides public REST API for 3rdparty integration.
 
 ## Table of Contents
 - [API](#api)
@@ -65,10 +66,6 @@
 
 Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managment system) to integrate, customize and enhance Frtc Solution.
 
-## Release Notes
-| Date      | Version   | Description                        |
-|------------|--------|------------------------------------|
-| July 8, 2024       | 3.4.0    | GA |
 
 ## Common Section
 
@@ -76,7 +73,7 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
 | Header Name     | Value                  | Description                        |
 |-----------------|------------------------|------------------------------------|
 | `Content-Type`  | `application/json`     | The media type of the resource     |
-| `User-Agent`    | `FrtcMeeting/3.4.0 $platform $platform_version`          | e.g. FrtcMeeting/3.4.0 windows 10.0.19045 |
+| `User-Agent`    | `FrtcMeeting/3.4.2 $platform $platform_version`          | e.g. FrtcMeeting/3.4.2 windows 10.0.19045 |
 
 ### HTTP URL Common Parameters
 
