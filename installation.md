@@ -21,7 +21,7 @@ After logging into the web management page, navigate to System Management -> Sys
 
 - ✅Configure firewall: Map the public IP (e.g., 36.105.101.82) to the internal IP of SQMeeting Server (e.g., 10.150.1.202) on the DMZ or cloud platform firewall, and open the management port and media port group configured in your system (e.g., open tcp: 7443, udp: 32500 - 32507).
 
-- ✅Configure public network: Navigate to SQMeeting Server management page → System Management → System Settings, configure the Public IP Address (icon 1), Management Port, Public Media IP (icon 2) and Media Ports, submit the changes, and the service will automatically restart for the changes to take effect.
+- ✅Configure public network: Navigate to SQMeeting Server management page → System Management → System Settings, configure the Public IP Address (label 1), Management Port, Public Media IP (label 2) and Media Ports, submit the changes, and the service will automatically restart for the changes to take effect.
 
 ![System Configuration](./images/config_basic.jpg)
 
@@ -44,7 +44,7 @@ Server installation and basic configuration is now complete
 
 ## 4. Certificate
 
-The system comes with a default self-signed certificate. When accessing the server website through a browser, you may receive security warning prompts.
+The SQMeeting server comes with a default self-signed certificate. When accessing the server management website through a browser, you may receive security warning prompts.
 
 It is recommended that users install a certificate authenticated by a CA authority. You can upload your own certificate through the certificate management interface on the server website. Please refer to the image below for certificate format requirements:
 
@@ -74,7 +74,7 @@ How to install a license:
 
 How to perform a system upgrade:
 
-1. Download the SQMeeting system upgrade package:
+1. Download the SQMeeting server upgrade package:
    - For x86 platform: FrtcServer-x86_64-x.x.x-xxxxx.bin
    - For arm64 platform: FrtcServer-arm_64-x.x.x-xxxxx.bin
 
@@ -82,7 +82,7 @@ How to perform a system upgrade:
 
 ### 7. System Rollback
 
-The SQMeeting system does not support automatic rollback. If you have installed a higher version and want to roll back to a lower version, you need to first remove the existing system and then reinstall it.
+The SQMeeting server does not support automatic rollback. If you have installed a higher version and want to roll back to a lower version, you need to first remove the existing system and then reinstall it.
 
 ### 8. How to Remove the Existing System
 
@@ -106,13 +106,13 @@ su - frtc_console
 
 ### 10. How to View or Modify the Service Platform's Network/DNS/Hostname
 
-1. Launch the Service Platform Console
+1. Launch the SQMeeting server Console
 
    After logging in with the system root account or other accounts, execute the command `su - frtc_console`
 
 2. Network Settings
 
-   After the service platform is installed, it uses DHCP by default. Please confirm that the address obtained by DHCP is consistent with the IP address configured in the operating system. Use this address to directly access the SQMeeting Server Web page for the next step of system configuration and management.
+   After the SQMeeting server is installed, it uses DHCP by default. Please confirm that the address obtained by DHCP is consistent with the IP address configured in the operating system. Use this address to directly access the SQMeeting Server Web page for the next step of system configuration and management.
 
 ![Network Configuration](./images/config_dhcp.png)
 
@@ -130,13 +130,13 @@ You can enhance system security through the following methods:
 
 1. Disable SSH Service
    
-   After the service platform is installed and deployed, you can disable the SSH service to improve system security. If you perform a system security vulnerability scan, the SSH service must be turned off before scanning.
+   After the SQMeeting server is installed and deployed, you can disable the SSH service to improve system security. If you perform a system security vulnerability scan, the SSH service must be turned off before scanning.
    
    To disable SSH, open the server console, navigate to the Diag page, select "Disable SSH", press Enter to confirm, and then click OK to confirm.
 
 2. System Security Settings
    
-   Access SQMeeting Server web page → System Management → Security Settings, set "Password Security Level" and "Password Validity Period", enable "Prohibit External Network Access to Management Page" to enhance system security.
+   Access SQMeeting Server web page → System Management → Security Settings, set "Password Security Level" and "Password Validity Period", enable "Deny Access from Public Network" to enhance system security.
 
 
 ### 12. Recording and Streaming Service Configuration
@@ -145,8 +145,8 @@ This page explains how to configure recording and streaming services on the SQMe
 
 To get recording and streaming services, you need to:
 
-1. Install the gateway node according to steps one to four of the meeting gateway guide
-2. Install and configure the recording node according to the instructions on this page
+1. Install the gateway node
+2. Install and configure the recording node
 
 #### 12.1 Installation Preparation
 Resources needed for installation:
