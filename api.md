@@ -68,7 +68,7 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
 ## Release Notes
 | Date      | Version   | Description                        |
 |------------|--------|------------------------------------|
-| 2024年7月8日       | 3.4.0    | GA |
+| July 8, 2024       | 3.4.0    | GA |
 
 ## Common Section
 
@@ -116,7 +116,7 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
   { 
    "user_id": "xxxxxxx_user_uuid", 
    "username": "test1", 
-   "real_name": "测试1" 
+   "real_name": "Test1" 
   } 
  ], 
  "owner_name": "{owner_name}", 
@@ -148,7 +148,7 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
   { 
    "user_id": "{user_id}", 
    "username": "test1", 
-   "real_name": "测试1" 
+   "real_name": "Test1" 
   } 
  ], 
  "owner_name": "$owner_name", 
@@ -273,7 +273,7 @@ empty
         {
             "user_id": "{user_id}",
             "username": "test1",
-            "real_name": "测试1"
+            "real_name": "Test1"
         }
     ],
     "mute_upon_entry": "DISABLE/ENABLE",
@@ -391,7 +391,7 @@ empty
         {
             "user_id": "{user_id}",
             "username": "test1",
-            "real_name": "test1"
+            "real_name": "Test1"
         }
     ],
     "owner_name": "{owner_name}",
