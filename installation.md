@@ -62,17 +62,17 @@ This section explains how to configure gateway services on the SQMeeting server.
 
 To obtain gateway services, you need to:
 
-1. Install and configure the gateway node
-2. Configure the H.323 service
+1. ✅Install and configure the gateway node
+2. ✅Configure the H.323 service
 
 #### 1 Installation Preparation
 Resources needed for installation:
 
 Please prepare a dedicated VM to install the SQMeeting gateway node, do not share the VM with other services!
 
-- Minimum configuration: 4 logical CPU cores, 4GB Memory, 100GB or more system disk (Note: Supports 1 interconnection)
-- Recommended configuration: 16 logical CPU cores, 16GB Memory, 120GB or more system disk (Note: Supports 4 interconnections)
-- CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
+- ✅Minimum configuration: 4 logical CPU cores, 4GB Memory, 100GB or more system disk (Note: Supports 1 interconnection)
+- ✅Recommended configuration: 16 logical CPU cores, 16GB Memory, 120GB or more system disk (Note: Supports 4 interconnections)
+- ✅CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
 
 #### 2 Installing the Gateway Node
 The installation package used for the gateway node is the same as the main service platform, but with different configuration. Based on different CPU architectures and operating system versions, refer to the service platform download and installation guide. For example, on Ubuntu systems, find the corresponding "SQMeeting Service Platform Installation Package Download" for Ubuntu, download the installation package, and then follow "II. Installation" in the "SQMeeting Service Platform Ubuntu Installation Guide" to install the gateway node.
@@ -100,8 +100,8 @@ Log in to the service platform web management page (e.g., https://10.150.1.202:7
 ![Gateway Internal](./images/gateway_internal.png)
 
 Methods for interconnecting with H.323 equipment:
-- If the H.323 device is on the service platform's intranet, call: Service platform intranet address##SQMeeting meeting number (e.g., 10.150.1.202##666888), check if audio, video, and dual stream can be interconnected
-- If the H.323 device is on the service platform's external network, call: Service platform external network address##SQMeeting meeting number (e.g., 36.105.101.82##666888), check if audio, video, and dual stream can be interconnected
+- ✅If the H.323 device is on the service platform's intranet, call: Service platform intranet address##SQMeeting meeting number (e.g., 10.150.1.202##666888), check if audio, video, and dual stream can be interconnected
+- ✅If the H.323 device is on the service platform's external network, call: Service platform external network address##SQMeeting meeting number (e.g., 36.105.101.82##666888), check if audio, video, and dual stream can be interconnected
 
 ## Add Streaming node for recording and live streaming
    
@@ -113,17 +113,17 @@ This page explains how to configure recording and streaming services on the SQMe
 
 To get recording and streaming services, you need to:
 
-1. Install the gateway node
-2. Install and configure the recording node
+1. ✅Install the gateway node
+2. ✅Install and configure the recording node
 
 #### 2. Installation Preparation
 Resources needed for installation:
 
 Please prepare a dedicated VM to install the SQMeeting recording and streaming node, do not share the VM with other services!
 
-- Minimum configuration: 4 logical CPU cores, 8GB Memory, 100GB or more system disk (Note: Minimum configuration is for testing only)
-- Recommended configuration: 8 logical CPU cores, 16GB Memory, 120GB or more system disk, 500GB or more data disk
-- CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
+- ✅Minimum configuration: 4 logical CPU cores, 8GB Memory, 100GB or more system disk (Note: Minimum configuration is for testing only)
+- ✅Recommended configuration: 8 logical CPU cores, 16GB Memory, 120GB or more system disk, 500GB or more data disk
+- ✅CPU requirements: 2.3GHz or higher frequency; x86 needs to support avx2
 
 #### 3. Installation Steps
 Based on different CPU architectures and operating system versions, refer to step two of the service platform download and installation guide to install the recording node
@@ -180,7 +180,7 @@ After execution is complete, the system will automatically restart.
 
 Check the software license to ensure it is still valid.
 
-1. Schedule a meeting on the web management page, check the meeting details, and get the meeting URL or QR code.
-2. Install two SQMeeting clients, join the meeting by clicking the URL or scanning the QR code, and test if audio and video are working normally.
-3. After the basic test is passed, you can start using SQMeeting for meetings and other audio-video collaboration.
+1. ✅Schedule a meeting on the web management page, check the meeting details, and get the meeting URL or QR code.
+2. ✅Install two SQMeeting clients, join the meeting by clicking the URL or scanning the QR code, and test if audio and video are working normally.
+3. ✅After the basic test is passed, you can start using SQMeeting for meetings and other audio-video collaboration.
 
