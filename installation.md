@@ -92,12 +92,12 @@ Specific operation: Select "Gateway" for Node Type, fill in the service platform
 Confirm that the gateway node has successfully joined the service platform
 Log in to the service platform web management page (e.g., https://10.150.1.202:7443).
 Navigate to System Management -> System Settings, confirm that the gateway node has successfully joined the SQMeeting server, and that the node status is normal.
-![Gateway Node](./images/gatewaynode.jpg)
+![Gateway Node](./images/gateway_node.png)
 
 #### 4 Interconnection with H.323 Equipment
 If H.323 equipment is on the intranet where the service platform is located, you need to first add the intranet device IP range to the service platform.
 Log in to the service platform web management page (e.g., https://10.150.1.202:7443), navigate to System Management -> Gateway Settings, add the intranet device address range, as shown in the format below:
-![Gateway Internal](./images/gatewayinternal.jpg)
+![Gateway Internal](./images/gateway_internal.png)
 
 Methods for interconnecting with H.323 equipment:
 - If the H.323 device is on the service platform's intranet, call: Service platform intranet address##SQMeeting meeting number (e.g., 10.150.1.202##666888), check if audio, video, and dual stream can be interconnected
@@ -144,12 +144,12 @@ Specific operation: Select "StreamingServer" for Node Type, fill in the service 
 After the recording node joins the cluster, log in to the service platform web management page (e.g., https://10.150.1.202:7443).
 Navigate to System Management -> System Settings, confirm that the recording node has successfully joined the SQMeeting server, and that the node status is normal.
 
-![Recording Node](./images/recording_node.jpg)
+![Recording Node](./images/recording_node.png)
 
 Navigate to System Management -> Recording Settings.
 
 If the number of concurrent streaming viewers is small, you can select "Use the public network address set by the system".
-![Recording Settings_System Public Network](./images/recording_settings_system.jpg)
+![Recording Settings_System Public Network](./images/recording_settings_system.png)
 
 If you are providing official recording services, you need to configure dedicated public network address, domain name, bandwidth for streaming, and install certificates.
 
