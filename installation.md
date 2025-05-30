@@ -175,6 +175,7 @@ After execution is complete, the system will automatically restart.
   SQMeeting server support HA deployment. 
   please contact us for support. 
 
+📝 [yunling@dcholdings.com](mailto:yunling@dcholdings.com)
 
 ## Test Basic Functions
 
