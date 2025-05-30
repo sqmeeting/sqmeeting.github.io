@@ -21,15 +21,15 @@ After logging into the web management page, navigate to System Management -> Sys
 
 - ✅Configure firewall: Map the public IP (e.g., 36.105.101.82) to the internal IP of SQMeeting Server (e.g., 10.150.1.202) on the DMZ or cloud platform firewall, and open the management port and media port group configured in your system (e.g., open tcp: 7443, udp: 32500 - 32507).
 
-- ✅Configure public network: Navigate to SQMeeting Server management page → System Management → System Settings, configure the public management IP (icon 1), management port, public media IP (icon 2) and media ports, submit the changes, and the service will automatically restart for the changes to take effect.
+- ✅Configure public network: Navigate to SQMeeting Server management page → System Management → System Settings, configure the Public IP Address (icon 1), Management Port, Public Media IP (icon 2) and Media Ports, submit the changes, and the service will automatically restart for the changes to take effect.
 
 ![System Configuration](./images/config_basic.jpg)
 
-After configuration is complete, you can access SQMeeting services through the domain name or public IP address.
+After configuration is complete, you can access SQMeeting server through the domain name or public IP address.
 
 ## 2. NTP Settings
 
-System Management -> NTP Settings, configure NTP server to ensure system time synchronizes with standard time, otherwise the service cannot operate normally.
+System Management -> NTP Settings, configure NTP server to ensure system time synchronizes with standard time, otherwise the SQMeeting server is not running properly.
 
 ![NTP Configuration](./images/config_ntp.jpg)
 
