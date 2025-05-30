@@ -23,7 +23,7 @@ After logging into the web management page, navigate to System Management -> Sys
 
 - ✅Configure public network: Navigate to SQMeeting Server management page → System Management → System Settings, configure the Public IP Address (label 1), Management Port, Public Media IP (label 2) and Media Ports, submit the changes, and the service will automatically restart for the changes to take effect.
 
-![System Configuration](./images/config_basic.jpg)
+![System Configuration](./images/config_basic.png)
 
 After configuration is complete, you can access SQMeeting server through the domain name or public IP address.
 
