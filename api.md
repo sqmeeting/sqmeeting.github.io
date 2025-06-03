@@ -69,10 +69,10 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
 ## Common Section
 
 ### HTTP Common Headers
-| Header | Value | Description |
-|-----------|-----------|-----------|
-| Content-Type | application/json | 1 |
-| User-Agent   | FrtcMeeting/3.4.2 platform platform_version | 2 |
+| Header | Value |
+|-----------|-----------|
+| Content-Type | application/json |
+| User-Agent   | FrtcMeeting/3.4.2 platform platform_version |
 
 
 <!-- | Content-Type | application/json | The media type of the resource |
