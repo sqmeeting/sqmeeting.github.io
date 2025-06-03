@@ -40,7 +40,7 @@ tar -zxvf FrtcServer-x86_64-x.x.x-*****.tgz
 ./frtc-setup install
 ```
 
-5. ***Access https://your-linux-server-IP:7443 via browser to configure.***
+1. ***Navigate to https://your-linux-server-IP:7443 to configure.***
 
 
 ## System Settings
@@ -54,7 +54,7 @@ Password: Admin123!@#  (Please change the password after login)
 
 After logging into the web management page, navigate to System Management -> System Settings to configure the network and ports required by the system.
 
-- If your system only works on the intranet, you can keep the default settings. You can also configure the intranet domain name and management port (default: 7443) as needed; in the System Settings → Node List → Modify page, configure the media ports (default: 32500-32507).
+- If your system only works within the intranet, you can keep the default settings. You can also configure the intranet domain name and management port (default: 7443) as needed; in the System Settings → Node List → Modify page, configure the media ports (default: 32500-32507).
 
 - If you deploy the SQMeeting Server in an enterprise DMZ or cloud platform and need to access SQMeeting Server's login, scheduling, and meeting services from the public network, you need to configure the following:
 
@@ -62,7 +62,7 @@ After logging into the web management page, navigate to System Management -> Sys
 
 - ✅Configure firewall: Map the public IP (e.g., 36.105.101.82) to the internal IP of SQMeeting Server (e.g., 10.150.1.202) on the DMZ or cloud platform firewall, and open the management port and media port group configured in your system (e.g., open tcp: 7443, udp: 32500 - 32507).
 
-- ✅Configure public network: Navigate to SQMeeting Server management page → System Management → System Settings, configure the Public IP Address (label 1), Management Port, Public Media IP (label 2) and Media Ports, submit the changes, and the service will automatically restart for the changes to take effect.
+- ✅Configure public network: Navigate to SQMeeting Server management page → System Management → System Settings, configure the Public IP Address (label 1), Management Port, Public Media IP (label 2) and Media Ports, submit the changes, and the service will automatically restart to apply these changes.
 
 ![System Configuration](./images/config_basic.png)
 
@@ -70,15 +70,15 @@ After configuration is complete, you can access SQMeeting server through the dom
 
 ## NTP Settings
 
-System Management -> NTP Settings, configure NTP server to ensure system time synchronizes with standard time, otherwise the SQMeeting server is not running properly.
+System Management -> NTP Settings, configure NTP server to ensure system time synchronizes with standard time, otherwise the SQMeeting server will not run properly.
 
 ***Server installation and basic configuration is now complete! You can start a meeting now!***
 
 
 ## Add Gateway Node 
 
-Gateway node is used for h323 device dialing in SQMeeting. 
-Gateway node is also used for recording and live streaming.  
+The Gateway node is used for h323 device dialing in SQMeeting. 
+The Gateway node is also used for recording and live streaming.  
 
 This section explains how to configure gateway services on the SQMeeting server. The gateway service is mainly used for interconnection between the SQMeeting system and H.323 conference room equipment.
 
@@ -99,7 +99,7 @@ Please prepare a dedicated VM to install the SQMeeting gateway node, do not shar
 #### 2 Installing the Gateway Node
 The installation package used for the gateway node is the same as the main service platform, but with different configuration. Based on different CPU architectures and operating system versions, refer to the service platform download and installation guide. For example, on Ubuntu systems, find the corresponding "SQMeeting Service Platform Installation Package Download" for Ubuntu, download the installation package, and then follow "II. Installation" in the "SQMeeting Service Platform Ubuntu Installation Guide" to install the gateway node.
 
-Important!!!
+Important Note:
 When running the installation command, choose "no" for free license
 After the node installation is complete, there is no need to perform web configuration, return to this page for adding the gateway node and configuring the service
 
@@ -127,7 +127,7 @@ Methods for interconnecting with H.323 equipment:
 
 ## Add Streaming node for recording and live streaming
    
-   please install gateway node first. 
+   please install the gateway node first. 
 
 #### 1. Recording and Streaming Service Configuration
 
