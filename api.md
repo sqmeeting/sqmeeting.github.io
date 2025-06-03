@@ -76,9 +76,6 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
 | User-Agent | FrtcMeeting/3.4.2 platform platform_version | e.g. FrtcMeeting/3.4.2 windows 10.0.19045 |
 
 
-<!-- | Content-Type | application/json | The media type of the resource |
-| User-Agent   | FrtcMeeting/3.4.2 platform platform_version | e.g. FrtcMeeting/3.4.2 windows 10.0.19045 | -->
-
 ### HTTP URL Common Parameters
 
 **Signed In Query** `client_id=$client_id&token=$user_token`
