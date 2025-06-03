@@ -1,25 +1,26 @@
-<!-- # Installation -->
+# Installation
 
 ## Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Basic install (single node)](#basic-install-single-node)
-- [System Settings](#system-settings)
-- [NTP Settings](#ntp-settings)
-- [Add Gateway Node](#add-gateway-node)
-    - [1 Installation Preparation](#1-installation-preparation)
-    - [2 Installing the Gateway Node](#2-installing-the-gateway-node)
-    - [3 Adding the Gateway Node](#3-adding-the-gateway-node)
-    - [4 Interconnection with H.323 Equipment](#4-interconnection-with-h323-equipment)
-- [Add Streaming node for recording and live streaming](#add-streaming-node-for-recording-and-live-streaming)
-  - [1. Recording and Streaming Service Configuration](#1-recording-and-streaming-service-configuration)
-    - [2. Installation Preparation](#2-installation-preparation)
-    - [3. Installation Steps](#3-installation-steps)
-    - [4. Adding the Recording Node](#4-adding-the-recording-node)
-    - [5. Configuring Recording Service](#5-configuring-recording-service)
-    - [6. Recording and Streaming Test](#6-recording-and-streaming-test)
-- [How to Remove the Existing System](#how-to-remove-the-existing-system)
-- [HA deployment](#ha-deployment)
-- [Test Basic Functions](#test-basic-functions)
+- [Installation](#installation)
+  - [Table of Contents](#table-of-contents)
+  - [Basic install (single node)](#basic-install-single-node)
+  - [System Settings](#system-settings)
+  - [NTP Settings](#ntp-settings)
+  - [Add Gateway Node](#add-gateway-node)
+      - [1 Installation Preparation](#1-installation-preparation)
+      - [2 Installing the Gateway Node](#2-installing-the-gateway-node)
+      - [3 Adding the Gateway Node](#3-adding-the-gateway-node)
+      - [4 Interconnection with H.323 Equipment](#4-interconnection-with-h323-equipment)
+  - [Add Streaming node for recording and live streaming](#add-streaming-node-for-recording-and-live-streaming)
+      - [1. Recording and Streaming Service Configuration](#1-recording-and-streaming-service-configuration)
+      - [2. Installation Preparation](#2-installation-preparation)
+      - [3. Installation Steps](#3-installation-steps)
+      - [4. Adding the Recording Node](#4-adding-the-recording-node)
+      - [5. Configuring Recording Service](#5-configuring-recording-service)
+      - [6. Recording and Streaming Test](#6-recording-and-streaming-test)
+  - [How to Remove the Existing System](#how-to-remove-the-existing-system)
+  - [HA deployment](#ha-deployment)
+  - [Test Basic Functions](#test-basic-functions)
 
 ## Basic install (single node)
 
@@ -128,7 +129,7 @@ Methods for interconnecting with H.323 equipment:
    
    please install gateway node first. 
 
-### 1. Recording and Streaming Service Configuration
+#### 1. Recording and Streaming Service Configuration
 
 This page explains how to configure recording and streaming services on the SQMeeting server.
 
