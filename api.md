@@ -541,8 +541,8 @@ empty
 **Description:**
 
 **Request:**
-| Field      | Type   | Description                        |
-|------------|--------|------------------------------------|
+| Field | Type | Desc |
+|-----------|-----------|-----------|
 | `allow_self_unmute`     | string | Updated name of the resource       |
 | `exclusions`| long   | excluded the ids of client  |
 
