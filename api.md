@@ -5,7 +5,6 @@ SQMeeting Server provides public REST API for 3rdparty integration.
 - [API](#api)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Release Notes](#release-notes)
   - [Common Section](#common-section)
     - [HTTP Common Headers](#http-common-headers)
     - [HTTP URL Common Parameters](#http-url-common-parameters)
@@ -70,10 +69,10 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
 ## Common Section
 
 ### HTTP Common Headers
-| Header Name     | Value                  | Description                        |
-|-----------------|------------------------|------------------------------------|
-| `Content-Type`  | `application/json`     | The media type of the resource     |
-| `User-Agent`    | `FrtcMeeting/3.4.2 $platform $platform_version`          | e.g. FrtcMeeting/3.4.2 windows 10.0.19045 |
+| Header Name     | Value | Description |
+|-----------------|-----------------|-----------------|
+| `Content-Type`  | `application/json`     | The media type of the resource |
+| `User-Agent`    | `FrtcMeeting/3.4.2 $platform $platform_version` | e.g. FrtcMeeting/3.4.2 windows 10.0.19045 |
 
 ### HTTP URL Common Parameters
 
