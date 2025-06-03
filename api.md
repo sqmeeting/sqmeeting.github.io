@@ -544,8 +544,8 @@ empty
 
 | Field | Type | Desc |
 |-----------|-----------|-----------|
-| `allow_self_unmute`     | string | Updated name of the resource       |
-| `exclusions`| long   | excluded the ids of client  |
+| allow_self_unmute     | string | Updated name of the resource       |
+| exclusions | long   | excluded the ids of client  |
 
 **Response:**
 
@@ -1414,7 +1414,7 @@ empty
 
 | Field | Type | Desc |
 |-----------|-----------|-----------|
-| `user_token`       | int    | the token of user |
+| user_token       | int    | the token of user |
 
 
 ### Sign Out
