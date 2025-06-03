@@ -1410,8 +1410,8 @@ empty
 **Request:**
 
 **Response:**
-| Field      | Type   | Description                        |
-|------------|--------|------------------------------------|
+| Field | Type | Desc |
+|-----------|-----------|-----------|
 | `user_token`       | int    | the token of user |
 
 
