@@ -541,6 +541,7 @@ empty
 **Description:**
 
 **Request:**
+
 | Field | Type | Desc |
 |-----------|-----------|-----------|
 | `allow_self_unmute`     | string | Updated name of the resource       |
@@ -1410,6 +1411,7 @@ empty
 **Request:**
 
 **Response:**
+
 | Field | Type | Desc |
 |-----------|-----------|-----------|
 | `user_token`       | int    | the token of user |
