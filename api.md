@@ -170,15 +170,16 @@ Frtc Server provides a lot of public APIs for 3rd party (app, sdk or IT managmen
 **Description:**
 
 **Request:**
-| Field      | Type   | Description                        |
-|------------|--------|------------------------------------|
-| `meeting_type`       | int    | the type of meeting |
-| `meeting_name`     | string | Name of the meeting               |
+| Field | Type | Type |
+|-----------|-----------|-----------|
+| meeting_type | int | the type of meeting |
+| meeting_name | string | Name of the meeting |
+
 
 **Response:**
-| Field      | Type   | Description                        |
-|------------|--------|------------------------------------|
-| `meeting_number`       | int    | the number of the meeting |
+| Field | Type | Type |
+|-----------|-----------|-----------|
+| meeting_number | int | the number of the meeting |
 
 ### Update Non-recurrence Meeting
 
