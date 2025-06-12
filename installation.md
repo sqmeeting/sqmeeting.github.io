@@ -32,12 +32,12 @@ tar -zxvf FrtcServer-x86_64-x.x.x-*****.tgz
 
 3. ***Verify if the system meets the installation requirements***
 ```bash
-./frtc-setup check
+sudo ./frtc-setup check
 ```
 
 4. ***Run the installation command***
 ```bash
-./frtc-setup install
+sudo ./frtc-setup install
 ```
 
 1. ***Navigate to https://your-linux-server-IP:7443 to configure.***

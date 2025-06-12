@@ -59,12 +59,12 @@ tar -zxvf FrtcServer-x86_64-x.x.x-*****.tgz
 
 3. ***检查系统是否满足安装要求***
 ```bash
-./frtc-setup check
+sudo ./frtc-setup check
 ```
 
 4. ***运行安装命令***
 ```bash
-./frtc-setup install
+sudo ./frtc-setup install
 ```
 
 5. ***使用浏览器访问 https://your-linux-server-IP:7443 进行配置.***
