@@ -99,8 +99,8 @@ sudo ./frtc-setup install
 | 客户端系统 | 下载 | SHA1 |
 |---------|---------|---------|
 | Windows|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-win-en-release-3.4.2-619.msi) | 873c5171cb069fe41a280ee778d89d1eb7a45f41 |
-| MacOS|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-3.4.2.403.dmg)| f6cbbafdd0d0030fc976c22873081716b1c3e5d2 |
-| MacOS arm64|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-arm64-3.4.2.403.dmg)| c025e560fd4bc7042ea7c8f69473f90e1e329819 |
+| MacOS|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-3.4.2.404.dmg)| 79c98d7f845a22764ecd4a9b43c1b0a350e1e204 |
+| MacOS arm64|[下载](https://shenqi-dl.internetware.cn/client/SQMeeting-Mac-arm64-3.4.2.404.dmg)| 654529f666e5f4da3b04e2090aad443877e0001c |
 | Linux x86| [下载](https://shenqi-dl.internetware.cn/client/SQMeeting-linux-x86_64-3.4.1.20250307.tar.gz) | 1867c6c1435b199cd6694e0596e1e41cdd6899b6 |
 | Linux arm64| [下载](https://shenqi-dl.internetware.cn/client/SQMeeting-linux-arm64-3.4.1.20250307.tar.gz) | 98b69d2f56aaacbf6851f364f64836b7dc41a6b2 |
 | Android|![二维码](./images/androidqr.jpg)| ac7a25d43efb90334b1035c6ffecf33fc1972b64 |
