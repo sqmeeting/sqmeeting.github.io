@@ -120,8 +120,6 @@ Designed for meeting room devices such as MAXHUB, Newline, etc.
 
 ## Contact Us for Commercial Support
 
-📝 [yunling@dcholdings.com](mailto:yunling@dcholdings.com)
-
 💡 [discussions](https://github.com/orgs/sqmeeting/discussions)
 
 🌐 [https://github.com/sqmeeting](https://github.com/sqmeeting)
