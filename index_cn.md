@@ -120,8 +120,6 @@ sudo ./frtc-setup install
 
 ## 联系我们获取商业支持
 
-📝[yunling@dcholdings.com](mailto:yunling@dcholdings.com)
-
 💡 [讨论](https://github.com/orgs/sqmeeting/discussions)
 
 🌐 [开源地址: https://github.com/sqmeeting](https://github.com/sqmeeting)
